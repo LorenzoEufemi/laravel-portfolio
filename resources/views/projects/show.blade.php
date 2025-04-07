@@ -4,7 +4,11 @@
     <div class="card text-center mb-5">
         <div class="card-header">
             Nome: {{ $project->name }}
+            <em class="">
+                Tipologia: {{ $project->type->name }}
+            </em>
         </div>
+
         <div class="card-body">
             <h5 class="card-title">Cliente: {{ $project->client }}</h5>
             <p class="card-text">{{ $project->summary }}</p>

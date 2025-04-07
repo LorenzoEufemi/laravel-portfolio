@@ -9,6 +9,7 @@
             <tr>
                 <th>Nome</th>
                 <th>Cliente</th>
+                <th>Tipologia</th>
                 <th>Visualizza</th>
 
 
@@ -20,6 +21,7 @@
 
                     <td>{{ $project->name }}</td>
                     <td>{{ $project->client }}</td>
+                    <td>{{ $project->type->name }}</td>
                     <td><a class="btn btn-success" href="{{ route('projects.show', $project) }}">Visualizza</a></td>
                     <td><a class="btn btn-warning" href="{{ route('projects.edit', $project) }}">Modifica</a></td>
                     <td>
@@ -35,7 +37,9 @@
 
 
     </table>
-
-    <a class="btn btn-primary" href="{{ route('admin.index') }}">Torna alla pagina Admin</a>
+    <div class="d-flex justify-content-between">
+        <a class="btn btn-primary" href="{{ route('admin.index') }}">Torna alla pagina Admin</a>
+        <a class="btn btn-primary" href="{{ route('types.index') }}">Vai alla pagina Tipologie</a>
+    </div>
 
 @endsection

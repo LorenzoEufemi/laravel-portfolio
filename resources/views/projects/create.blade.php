@@ -16,6 +16,15 @@
         <textarea class="form-control" id="summary" name="summary" rows="3"></textarea>
     </div>
     <div class="mb-3">
+        <label for="type">Tipologia</label>
+        <select name="type_id" id="type_id">
+            @foreach ($types as $type)
+                <option value="{{ $type->id }}">{{ $type->name }}</option>
+            @endforeach
+        </select>
+    </div>
+
+    <div class="mb-3">
         <label for="duration" class="form-label">Durata</label>
         <input type="text" class="form-control" id="duration" name="duration">
     </div>

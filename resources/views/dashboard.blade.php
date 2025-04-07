@@ -2,6 +2,7 @@
 
 @section('content')
 <div class="container">
+    <a class="btn btn-primary" href="{{ route('admin.index') }}">Torna alla pagina Admin</a>
     <h2 class="fs-4 text-secondary my-4">
         {{ __('Dashboard') }}
     </h2>

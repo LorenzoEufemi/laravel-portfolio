@@ -22,6 +22,7 @@ class ProjectsTableSeeder extends Seeder
             $newProject->client = $faker->company();
             $newProject->duration = $faker->dateTimeBetween('-1 year', '+1 year')->format('Y-m-d');
             $newProject->summary = $faker->paragraph(3);
+            $newProject->type_id = $faker->numberBetween(1, 3); 
             $newProject->save();
             
         }
