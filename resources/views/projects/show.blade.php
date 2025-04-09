@@ -7,6 +7,13 @@
             <em class="">
                 Tipologia: {{ $project->type->name }}
             </em>
+            Tecnologie:
+            @forelse ($project->technologies as $technology)
+                <span class="badge" style="background-color: {{ $technology->color}}">{{ $technology->name }}</span>
+            @empty
+                <span class="badge bg-secondary">Nessuna tecnologia associata</span>
+            @endforelse
+                
         </div>
 
         <div class="card-body">

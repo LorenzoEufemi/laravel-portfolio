@@ -33,6 +33,15 @@
             <label for="duration" class="form-label">Durata</label>
             <input type="text" class="form-control" id="duration" name="duration" value="{{ $project->duration }}">
         </div>
+        <div class="mb-3">
+            @foreach ($technologies as $technology)
+                <input type="checkbox" name="technologies[]" value="{{ $technology->id }}"
+                    id="technology-{{ $technology->id }}"
+                    {{ $project->technologies->contains($technology->id) ? 'checked' : '' }}>
+
+                <label for="technology-{{ $technology->id }}">{{ $technology->name }}</label>
+            @endforeach
+        </div>
         <button type="submit" class="btn btn-primary">Modifica Progetto</button>
     </form>
     <a href="{{ route('projects.index') }}" class="btn btn-secondary mt-3">Torna a progetti</a>
