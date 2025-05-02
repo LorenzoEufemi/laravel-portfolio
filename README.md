@@ -1,3 +1,23 @@
+# Portfolio – Admin Dashboard
+
+Applicazione web realizzata in PHP con Laravel per la gestione personale dei progetti da mostrare in un portfolio online.
+
+## Tecnologie
+- PHP 
+- Laravel
+- Laravel Breeze (autenticazione)
+- Blade, MySQL
+
+## Funzionalità
+- **Autenticazione** utente con Laravel Breeze (login, registrazione, logout)
+- **Gestione progetti**: creazione, modifica, eliminazione e visualizzazione
+- Pannello amministrativo sicuro e facile da usare
+
+## Descrizione
+Questo progetto nasce come soluzione personalizzata per la gestione del proprio portfolio online. Grazie a Laravel e Blade, offre un’interfaccia pulita e funzionale per aggiornare i propri progetti in modo semplice e veloce, con dati salvati in un database MySQL. L'autenticazione garantisce l'accesso solo agli utenti autorizzati.
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
